@@ -1,0 +1,14 @@
+type Path {
+  id: Int
+  order: Int
+  description: String!
+}
+
+input PathInput {
+  order: Int
+  description: String!
+}
+
+input PathFilter {
+  id: Int
+}

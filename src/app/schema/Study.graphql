@@ -1,0 +1,18 @@
+type Study {
+  id: Int
+  scopeDefinition: String!
+  successDefinition: String!
+  paths: [Path]
+  references: [Reference]
+}
+
+input StudyInput {
+  scopeDefinition: String!
+  successDefinition: String!
+  paths: [Int]
+  references: [Int]
+}
+
+input StudyFilter {
+  id: Int!
+}

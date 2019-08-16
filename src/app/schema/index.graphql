@@ -1,0 +1,6 @@
+#import Category from 'Category.graphql'
+#import Reference from 'Reference.graphql'
+#import Path from 'Path.graphql'
+#import Study from 'Study.graphql'
+#import Query from 'Query.graphql'
+#import Mutation from 'Mutation.graphql'

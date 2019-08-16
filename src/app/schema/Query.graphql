@@ -1,0 +1,17 @@
+type Query {
+    # Categories
+    categories: [Category]
+    category(filter: CategoryFilter!): Category
+
+    # References
+    references: [Reference]
+    reference(filter: ReferenceFilter!): Reference
+
+    # Path
+    paths: [Path]
+    path(filter: PathFilter!): Path
+
+    # Study
+    studies: [Study]
+    study(filter: StudyFilter!): Study
+}

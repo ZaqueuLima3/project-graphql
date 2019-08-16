@@ -1,0 +1,64 @@
+query {
+	# Categories
+  # categories{
+  #   id name
+  # }
+
+  # category(id: 3){
+  #   id name
+  # }
+
+  # References
+  # references{
+  #   id url
+  #   category {
+  #     name
+  #   }
+  # }
+
+  # reference(id: 3) {
+  #   url
+  #   category {
+  #     name
+  #   }
+  # }
+
+  # Paths
+  # paths {
+  #   order description
+  # }
+
+  # path(id: 3) {
+  #   order
+  #   description
+  # }
+
+  # Studies
+  # studies {
+  #   scopeDefinition
+  #   successDefinition
+  #   paths {
+  #     order
+  #   }
+  #   references {
+  #     url
+  #     category {
+  #       name
+  #     }
+  #   }
+  # }
+
+  #  study(id: 1) {
+  #   scopeDefinition
+  #   successDefinition
+  #   paths {
+  #     order
+  #   }
+  #   references {
+  #     url
+  #     category {
+  #       name
+  #     }
+  #   }
+  # }
+}

@@ -1,0 +1,47 @@
+mutation {
+	# Categories
+  # createCategory(data:{name: "podcast"}) {
+  #   id name
+  # }
+
+  # updateCategory(
+  # 	filter:{id: 3}
+  #   data:{name: "youtubes"}
+  # ) {
+  #   id name
+  # }
+
+  # deleteCategory(filter: {id: 1}) {
+  #   id
+  # }
+
+  # References
+  # createReference(url:"http://www.somesite.com",categoryId:3) {
+  #   id url categoryId
+  # }
+
+  # updateReference(
+  #   filter: {id: 2}
+  # 	data: {url: "teste.com", categoryId: 3}
+  # ) {
+  #   url
+  #   category {
+  #     name
+  #   }
+  # }
+
+  # Paths
+  # createPath(order:3, description:"Definir o caminho de aprendizado") {
+  #   order description
+  # }
+
+  # Studies
+  # createStudy(
+  #   scopeDefinition:"aprender react",
+  #   successDefinition:"criar um front",
+  #   paths: [1, 2, 3],
+  #   references: [1, 2, 3]
+  # ) {
+  #   scopeDefinition successDefinition
+  # }
+}

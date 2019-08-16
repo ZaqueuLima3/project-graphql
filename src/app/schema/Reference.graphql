@@ -1,0 +1,14 @@
+type Reference {
+  id: Int
+  url: String!
+  category: Category
+}
+
+input ReferenceInput {
+  url: String!
+  categoryId: Int
+}
+
+input ReferenceFilter {
+  id: Int
+}

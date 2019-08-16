@@ -1,0 +1,58 @@
+type Mutation {
+  # Categories
+  createCategory(
+    data: CategoryInput!
+  ): Category!
+
+  updateCategory(
+    filter: CategoryFilter!
+    data: CategoryInput!
+  ): Category!
+
+  deleteCategory(
+    filter: CategoryFilter!
+  ): Category
+
+  # References
+  createReference(
+    data: ReferenceInput!
+  ): Reference!
+
+  updateReference(
+    filter: ReferenceFilter!
+    data: ReferenceInput!
+  ): Reference!
+
+  deleteReference(
+    filter: ReferenceFilter!
+  ): Reference
+
+  # Path
+  createPath(
+    data: PathInput!
+  ): Path!
+
+  updatePath(
+    filter: PathFilter!
+    data: PathInput!
+  ): Path!
+
+  deletePath(
+    filter: PathFilter!
+  ): Path
+
+  # Study
+  createStudy(
+    data: StudyInput!
+  ): Study!
+
+  updateStudy(
+    filter: StudyFilter!
+    data: StudyInput!
+  ): Study!
+
+  deleteStudy(
+    filter: StudyFilter!
+  ): Study
+
+}
