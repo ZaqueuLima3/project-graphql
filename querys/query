@@ -4,7 +4,11 @@ query {
   #   id name
   # }
 
-  # category(id: 3){
+  # category(
+  #   filter: {
+  #     id: 3
+  #   }
+  # ){
   #   id name
   # }
 
@@ -16,7 +20,11 @@ query {
   #   }
   # }
 
-  # reference(id: 3) {
+  # reference(
+  #   filter: {
+  #     id: 3
+  #   }
+  # ) {
   #   url
   #   category {
   #     name
@@ -25,19 +33,25 @@ query {
 
   # Paths
   # paths {
-  #   order description
+  #   id order description
   # }
 
-  # path(id: 3) {
+  # path(
+  #   filter: {
+  #     id: 3
+  #   }
+  # ) {
   #   order
   #   description
   # }
 
   # Studies
   # studies {
+  #   id
   #   scopeDefinition
   #   successDefinition
   #   paths {
+  #     id
   #     order
   #   }
   #   references {
@@ -48,10 +62,14 @@ query {
   #   }
   # }
 
-  #  study(id: 1) {
+  #  study(
+  #   filter: { id: 7 }
+  # ) {
+  #   id
   #   scopeDefinition
   #   successDefinition
   #   paths {
+  #     id
   #     order
   #   }
   #   references {

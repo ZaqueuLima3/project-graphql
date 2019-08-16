@@ -1,12 +1,14 @@
 mutation {
 	# Categories
-  # createCategory(data:{name: "podcast"}) {
+  # createCategory(
+  # data:{name: "books"}
+  # ) {
   #   id name
   # }
 
   # updateCategory(
   # 	filter:{id: 3}
-  #   data:{name: "youtubes"}
+  #   data:{name: "documentations"}
   # ) {
   #   id name
   # }
@@ -16,13 +18,23 @@ mutation {
   # }
 
   # References
-  # createReference(url:"http://www.somesite.com",categoryId:3) {
-  #   id url categoryId
+  # createReference(
+  #   data: {
+  #     url:"http://www.somesite.com",
+  #     categoryId:1
+  #   }
+  # ) {
+  #   id url category {
+  #     name
+  #   }
   # }
 
   # updateReference(
   #   filter: {id: 2}
-  # 	data: {url: "teste.com", categoryId: 3}
+  # 	data: {
+  #     url: "teste.com",
+  #     categoryId: 3
+  #   }
   # ) {
   #   url
   #   category {
@@ -30,18 +42,68 @@ mutation {
   #   }
   # }
 
+  # deleteReference(
+  #   filter: { id: 4 }
+  # ) {
+  #   id
+  # }
+
   # Paths
-  # createPath(order:3, description:"Definir o caminho de aprendizado") {
+  # createPath(
+  #   data: {
+  #     order:4,
+  #     description:"Definir o caminho de aprendizado"
+  #   }
+  # ) {
   #   order description
+  # }
+
+  # updatePath(
+  #   filter: { id: 5 }
+  #   data: {
+  # 		order: 6,
+  # 		description: "Mudado 6" }
+  # ) {
+  # 	order description
+  # }
+
+  # deletePath(
+  # 	filter: { id: 4 }
+  # ) {
+  #   id
   # }
 
   # Studies
   # createStudy(
-  #   scopeDefinition:"aprender react",
-  #   successDefinition:"criar um front",
-  #   paths: [1, 2, 3],
-  #   references: [1, 2, 3]
+  #   data: {
+  #     scopeDefinition:"aprender react",
+  #     successDefinition:"",
+  #     paths: [3, 5, 6],
+  #     references: [2, 3]
+  #   }
   # ) {
   #   scopeDefinition successDefinition
+  #   paths {
+  #     order
+  #     description
+  #   }
+  #   references {
+  #     url
+  #     category {
+  #       name
+  #     }
+  #   }
+  # }
+
+  # updateStudy(
+  #   filter: { id: 1 },
+  #   data: {
+  #     scopeDefinition: "agora este é o teste definitivo",
+  #     successDefinition: "e a ultima atu",
+  #     paths: [3, 5, 6],
+  #     references: [2, 3]
+  #   }
+  # ) {
+  #   id scopeDefinition
   # }
 }
